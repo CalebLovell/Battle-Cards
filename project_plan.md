@@ -78,7 +78,7 @@ BattleCards taps into humanity's love for hypothetical debates and "who would wi
 
 ### 5.1 Functional Requirements
 
-1. **User Authentication (Optional)**
+1. **User Authentication**
    - **Anonymous play** as the default experience.
    - **Optional account creation** with email/username only.
    - **Magic link authentication** (no passwords required).
@@ -171,12 +171,6 @@ BattleCards taps into humanity's love for hypothetical debates and "who would wi
 | **Backend**            | **Node.js + Express/Fastify**    | Simple API layer with real-time capabilities.        |
 | **Database**           | **PostgreSQL + Redis Cache**     | Reliable vote storage + fast matchup generation.     |
 | **Authentication**     | **Supabase Auth (Magic Links)**  | Passwordless, optional signup flow.                  |
-| **Image Generation**   | **Canvas API / Puppeteer**       | Dynamic social sharing images.                       |
-| **Asset Storage**      | **Cloudinary**                   | Optimized animal artwork delivery.                   |
-| **Hosting**            | **Vercel (Frontend) + Railway (Backend)** | Fast global deployment with simple scaling.     |
-| **Analytics**          | **PostHog**                       | Privacy-focused usage tracking.                      |
-| **Real-time Updates**  | **WebSockets (Socket.io)**       | Live vote count updates (optional enhancement).      |
-
 ---
 
 ### 6.3 Data Model
@@ -253,80 +247,6 @@ BattleCards taps into humanity's love for hypothetical debates and "who would wi
 - Mobile-optimized interface
 - Basic social sharing
 
-### 7.2 Phase 2: Viral Features (3-4 weeks)
-
-**Enhanced Sharing & Discovery**
-1. **Social Optimization**
-   - Dynamic social media card generation
-   - Shareable permalinks for specific matchups
-   - "Challenge a friend" functionality
-   - Improved results page design
-
-2. **Engagement Features**
-   - "Controversial takes" leaderboard
-   - Session stats and achievements
-   - Popular/trending matchups feed
-   - Better creature artwork and categories
-
-3. **Performance Scaling**
-   - Redis caching for vote counts
-   - Database optimization and indexing
-   - CDN setup for creature images
-   - Analytics dashboard for admin
-
-**Key Deliverables:**
-- Highly shareable results with dynamic images
-- Viral growth features (friend challenges, leaderboards)
-- Optimized performance for high traffic
-- Enhanced creature database (100+ creatures)
-
-### 7.3 Phase 3: Community & Polish (3-4 weeks)
-
-**Community Features**
-1. **Advanced Voting Features**
-   - Vote confidence levels ("I'm sure" vs "Maybe")
-   - Reasoning/comment system for votes
-   - Creature category filtering
-   - Custom quantity ranges
-
-2. **Social Features**
-   - Public user profiles with vote history
-   - "Most controversial voter" badges
-   - Matchup request system
-   - Community-driven creature suggestions
-
-3. **Advanced Analytics**
-   - Detailed voting pattern analysis
-   - A/B testing for matchup generation
-   - User engagement metrics
-   - Viral coefficient tracking
-
-**Key Deliverables:**
-- Rich community features and user profiles
-- Advanced matchup generation with ML insights
-- Comprehensive analytics and optimization
-- Preparation for monetization strategies
-
-### 7.4 Phase 4: Scale & Monetization (Ongoing)
-
-**Growth & Sustainability**
-1. **Monetization**
-   - Sponsored creature partnerships
-   - Premium accounts with vote history
-   - Custom creature requests
-   - API access for third-party integrations
-
-2. **Advanced Features**
-   - Tournament brackets for popular matchups
-   - Seasonal events and themed battles  
-   - Video integration for battle explanations
-   - Mobile app development
-
-**Key Deliverables:**
-- Sustainable revenue streams
-- Advanced competitive features
-- Mobile app for iOS/Android
-- Scaling infrastructure for millions of users
 
 ---
 
@@ -340,48 +260,6 @@ BattleCards taps into humanity's love for hypothetical debates and "who would wi
 | **Vote manipulation**       | Medium     | High            | Rate limiting, session tracking, and duplicate vote prevention   |
 | **Image loading speed**     | Medium     | Medium          | CDN implementation, image optimization, and lazy loading         |
 | **Scalability bottlenecks** | High       | Low             | Horizontal scaling, load balancing, and performance monitoring   |
-
-### 8.2 Product Risks
-
-| **Risk**                      | **Impact** | **Probability** | **Mitigation Strategy**                                         |
-| ----------------------------- | ---------- | --------------- | --------------------------------------------------------------- |
-| **Limited viral potential**   | High       | Medium          | Focus on highly shareable features and social media optimization |
-| **Content moderation issues** | Medium     | Medium          | Curated creature database and community reporting systems       |
-| **User retention challenges** | High       | Medium          | Gamification, social features, and continuous content updates   |
-| **Competitor copying**        | Medium     | High            | Focus on execution quality and community building               |
-
-### 8.3 Business Risks
-
-| **Risk**                    | **Impact** | **Probability** | **Mitigation Strategy**                                    |
-| --------------------------- | ---------- | --------------- | ---------------------------------------------------------- |
-| **Monetization difficulties** | High     | Medium          | Multiple revenue stream exploration and user value focus   |
-| **Legal/IP issues**         | Medium     | Low             | Original artwork, proper licensing, and legal review       |
-| **Seasonal interest drops** | Medium     | Medium          | Continuous content updates and feature development         |
-
----
-
-## 9. Success Metrics 📊🎯
-
-### 9.1 Core Engagement Metrics
-
-- **Daily Active Users (DAU)**: Target 10,000+ within 6 months
-- **Votes per Session**: Target 8+ votes per anonymous session
-- **Session Duration**: Target 5+ minutes average
-- **Return Rate**: Target 40%+ users returning within 7 days
-
-### 9.2 Viral Growth Metrics
-
-- **Share Rate**: Target 15%+ of users sharing results
-- **Viral Coefficient**: Target 1.2+ new users per existing user
-- **Social Media Reach**: Track mentions, shares, and engagement
-- **Organic Growth Rate**: Target 25%+ monthly growth
-
-### 9.3 User Experience Metrics
-
-- **Vote Completion Rate**: Target 95%+ votes completed after starting
-- **Mobile Performance**: Target <2 second load times on 3G
-- **User Satisfaction**: Target 4.5+ app store rating
-- **Controversial Matchup Rate**: Target 40-60% vote splits on 70%+ of matchups
 
 ---
 
